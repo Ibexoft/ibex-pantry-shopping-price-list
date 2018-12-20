@@ -6,7 +6,7 @@
         
     <h1>Create Product Category</h1>
 
-    <form method="POST" action="/product-categories">
+    <form method="POST" action="/categories">
         @csrf
         
         <div class="row">

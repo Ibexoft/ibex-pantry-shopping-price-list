@@ -28,8 +28,8 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function product_categories()
+    public function categories()
     {
-        return $this->hasMany('App\ProductCategory');
+        return $this->hasMany('App\Category');
     }
 }

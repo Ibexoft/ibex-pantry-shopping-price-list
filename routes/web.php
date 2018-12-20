@@ -22,5 +22,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Store routes
 Route::resource('stores', 'StoreController');
 
-// Product Category routes
-Route::resource('product-categories', 'ProductCategoryController');
+// Category routes
+Route::resource('categories', 'CategoryController');
