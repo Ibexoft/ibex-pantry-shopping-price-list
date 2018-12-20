@@ -4,7 +4,7 @@
 
 <div class="container">
         
-    <h1>Create Product Category</h1>
+    <h1>Create Category</h1>
 
     <form method="POST" action="/categories">
         @csrf
