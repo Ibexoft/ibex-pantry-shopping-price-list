@@ -9,6 +9,7 @@
         </div>
     </div> --}}
     <div class="row justify-content-center">
+        <h1>Stores</h1>
         <div class="table-responsive">
             <table class="table align-items-center">
                 <thead>
