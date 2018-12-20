@@ -24,3 +24,6 @@ Route::resource('stores', 'StoreController');
 
 // Category routes
 Route::resource('categories', 'CategoryController');
+
+// Product routes
+Route::resource('products', 'ProductController');
