@@ -8,13 +8,28 @@
 
     <form method="POST" action="/products">
         @csrf
-        
-        <div class="row">
-            <div class="col-4">
-                <input class="form-control" type="text" name="name" placeholder="Product Name">
+    
+        <div class="form-group row">
+            <label for="name" class="col-sm-2 col-form-label">Product Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Sugar">
             </div>
-            <div class="col-8">
-                <button class="btn btn-primary" type="submit">Add</button>
+        </div>
+
+        <div class="form-group row">
+            <label for="categories" class="col-sm-2 col-form-label">Categories</label>
+            <div class="col-sm-10">
+                <select multiple class="form-control" id="categories" name="categories[]">
+                    @foreach ($categories as $category)
+                        <option value="{{ $category->id }}">{{ $category->name }}</option>
+                    @endforeach
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Add</button>
             </div>
         </div>
     </form>

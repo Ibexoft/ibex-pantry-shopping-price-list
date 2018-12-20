@@ -35,7 +35,8 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('products.create');
+        $categories = auth()->user()->categories;
+        return view('products.create', compact('categories'));
     }
 
     /**
@@ -52,7 +53,9 @@ class ProductController extends Controller
 
         $attributes['user_id'] = auth()->id();
 
-        Product::create($attributes);
+        $product = Product::create($attributes);
+        
+        $product->categories()->attach( request('categories') );
 
         return redirect('products');
     }
