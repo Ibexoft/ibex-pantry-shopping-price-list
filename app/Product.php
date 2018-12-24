@@ -15,4 +15,12 @@ class Product extends Model
     {
         return $this->belongsToMany('App\Category');
     }
+
+    /**
+     * The roles that belong to the user.
+     */
+    public function variants()
+    {
+        return $this->hasMany('App\ProductVariant');
+    }
 }

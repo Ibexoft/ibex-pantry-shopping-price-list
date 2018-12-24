@@ -49,6 +49,21 @@
                                 </li>
                             @endif
                         @else
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Prices</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/products">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/categories">Categories</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/stores">Stores</a>
+                                </li>
+                            </ul>
+                                
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
