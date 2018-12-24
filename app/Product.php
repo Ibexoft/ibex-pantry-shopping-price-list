@@ -23,4 +23,12 @@ class Product extends Model
     {
         return $this->hasMany('App\ProductVariant');
     }
+
+    /**
+     * The roles that belong to the user.
+     */
+    public function prices()
+    {
+        return $this->hasMany('App\Price');
+    }
 }

@@ -51,7 +51,7 @@
                         @else
                             <ul class="nav justify-content-center">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Prices</a>
+                                    <a class="nav-link" href="/prices">Prices</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="/products">Products</a>

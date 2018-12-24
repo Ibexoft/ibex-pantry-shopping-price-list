@@ -27,3 +27,6 @@ Route::resource('categories', 'CategoryController');
 
 // Product routes
 Route::resource('products', 'ProductController');
+
+// Price routes
+Route::resource('prices', 'PriceController');

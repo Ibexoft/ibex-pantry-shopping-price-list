@@ -26,28 +26,6 @@
                 </select>
             </div>
         </div>
-
-        {{-- <div class="form-group row">
-            <label for="unit" class="col-sm-2 col-form-label">Unit</label>
-            <div class="col-sm-10">
-                <select class="form-control" id="unit" name="unit" required>
-                    <option value=""></option>
-                    <option value="g">g</option>
-                    <option value="kg">kg</option>
-                    <option value="dozen">Dozen</option>
-                    <option value="pc">Piece</option>
-                    <option value="carton">Carton</option>
-                    <option value="Litre">Litre</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="form-group row">
-            <label for="quantity" class="col-sm-2 col-form-label">Quantity</label>
-            <div class="col-sm-10">
-                <input type="number" class="form-control" id="quantity" name="quantity" required>
-            </div>
-        </div> --}}
     
         <div class="form-group row">
             <div class="col-sm-10">
