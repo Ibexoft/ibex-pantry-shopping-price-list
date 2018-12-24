@@ -51,10 +51,10 @@
                         @else
                             <ul class="nav justify-content-center">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/prices">Prices</a>
+                                    <a class="nav-link" href="/prices">Price List</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/products">Products</a>
+                                    <a class="nav-link" href="/products">Pantry List</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="/categories">Categories</a>

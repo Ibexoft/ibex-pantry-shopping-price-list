@@ -42,4 +42,9 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Price');
     }
+
+    public function stores()
+    {
+        return $this->hasMany('App\Store');
+    }
 }

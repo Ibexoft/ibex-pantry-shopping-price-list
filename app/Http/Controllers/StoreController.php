@@ -24,7 +24,7 @@ class StoreController extends Controller
      */
     public function index()
     {
-        $stores = Store::all();
+        $stores = auth()->user()->stores;
         return view('stores.index', compact('stores'));
     }
 

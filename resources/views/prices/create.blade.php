@@ -1,7 +1,3 @@
-@extends('layouts.app')
-
-@section('content')
-
 <div class="container mb-4">
     <div class="row justify-content-center">
         <h1 class="pr-2">Add Price</h1>
@@ -28,12 +24,15 @@
                 <div class="col-sm-10">
                     <select class="form-control" id="unit" name="unit" required>
                         <option value=""></option>
-                        <option value="g">g</option>
-                        <option value="kg">kg</option>
+                        <option value="gram">Gram</option>
+                        <option value="kilogram">Kilogram</option>
                         <option value="dozen">Dozen</option>
-                        <option value="pc">Piece</option>
+                        <option value="piece">Piece</option>
                         <option value="carton">Carton</option>
-                        <option value="Litre">Litre</option>
+                        <option value="litre">Litre</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
                     </select>
                 </div>
             </div>
@@ -70,5 +69,3 @@
         </form>
     </div>
 </div>
-
-@endsection

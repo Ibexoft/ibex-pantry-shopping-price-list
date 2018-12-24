@@ -25,7 +25,9 @@ class ProductController extends Controller
     public function index()
     {
         $products = auth()->user()->products;
-        return view('products.index', compact('products'));
+        $categories = auth()->user()->categories;
+        
+        return view('products.index', compact(['products', 'categories']));
     }
 
     /**

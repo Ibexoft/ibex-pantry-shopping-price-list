@@ -27,7 +27,10 @@ class PriceController extends Controller
     public function index()
     {
         $prices = auth()->user()->prices;
-        return view('prices.index', compact('prices'));
+        $products = auth()->user()->products;
+        $stores = auth()->user()->stores;
+        
+        return view('prices.index', compact(['prices', 'products', 'stores']));
     }
 
     /**
@@ -38,7 +41,7 @@ class PriceController extends Controller
     public function create()
     {
         $products = auth()->user()->products;
-        $stores = Store::all();
+        $stores = auth()->user()->stores;
         return view('prices.create', compact(['products', 'stores']));
     }
 

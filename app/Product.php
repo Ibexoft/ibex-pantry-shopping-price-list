@@ -31,4 +31,9 @@ class Product extends Model
     {
         return $this->hasMany('App\Price');
     }
+
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
 }

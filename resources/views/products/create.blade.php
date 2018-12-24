@@ -1,16 +1,12 @@
-@extends('layouts.app')
-
-@section('content')
-
 <div class="container">
         
-    <h1>Create Product</h1>
+    <h1>Add Product</h1>
 
     <form method="POST" action="/products">
         @csrf
     
         <div class="form-group row">
-            <label for="name" class="col-sm-2 col-form-label">Product Name</label>
+            <label for="name" class="col-sm-2 col-form-label">Product</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" id="name" name="name" placeholder="e.g. Sugar" required>
             </div>
@@ -34,5 +30,3 @@
         </div>
     </form>
 </div>
-
-@endsection
