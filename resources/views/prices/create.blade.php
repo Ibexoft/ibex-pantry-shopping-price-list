@@ -1,4 +1,4 @@
-<div class="container mb-4">
+<div class="container">
     <div class="row justify-content-center">
         <h1 class="pr-2">Add Price</h1>
     </div>
